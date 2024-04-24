@@ -52,11 +52,4 @@ public class Employee {
     public float getGrossPay() {
         return payRate * hoursWorked;
     }
-
-    //Overriding toString method to display employee details
-    @Override
-    public String toString() {
-        return "Employee ID: " + employeeId + ", Name: " + name + ", Gross Pay: " + getGrossPay();
-    }
-
 }

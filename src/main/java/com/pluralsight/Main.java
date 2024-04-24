@@ -26,12 +26,12 @@ public class Main {
                 float hoursWorked = Float.parseFloat(splitInput[2]);
                 float payRate = Float.parseFloat(splitInput[3]);
                 Employee employee = new Employee(id, name, hoursWorked, payRate);
-
-                System.out.println(employee.toString());
+                System.out.printf("Employee ID: %d \nName: %s \nGross Pay: %.2f\n\n", employee.getEmployeeId(), employee.getName(), employee.getPayRate());
             }
 
             //Close the stream and release the resources
             bufferedReader.close();
+            
         } catch (IOException e) {
             //Display the stack trace if there was an error
             e.printStackTrace();
